@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+/* 
+SemiBold 600
+Bold 700
+ExtraBold 800
+*/
+
+body {
+  color: #959595;
+  font-family: "Manrope", serif;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.5px;
+
+  background-color: #202020;
+
+  margin: 0;
+}
+
+a {
+  color: #dedede;
+  text-decoration: none;
+}
+
+.container{
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+.logo {
+  font-weight: 800;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+.header {
+  padding: 20px 0;
+
+  background: rgba(50, 50, 50, 0.7);
+  backdrop-filter: blur(10px);
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__nav {
+  display: flex;
+  gap: 60px;
+}
+
+.header__link {
+  font-weight: 700;
+  font-size: 18px;
+}
