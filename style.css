@@ -22,6 +22,10 @@ body {
   margin: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 a {
   color: #dedede;
   text-decoration: none;
@@ -141,4 +145,81 @@ a:hover {
 
   object-fit: cover;
   object-position: center;
+}
+
+/* Works */
+
+.works {
+  margin-top: 140px;
+}
+.container {
+}
+.works__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0;
+  margin-bottom: 80px;
+
+  background-color: transparent;
+  border: none;
+
+  font-family: "Manrope";
+  font-weight: 700;
+  font-size: 16px;
+
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+
+  color: #dedede;
+
+  opacity: 0.7;
+}
+.works__icon {
+}
+.works__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+.work {
+  height: 888px;
+  position: relative;
+}
+
+.work:nth-child(even){
+  position: relative;
+  top: 140px;
+}
+
+.work:hover{
+opacity: 1;
+}
+
+.work__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.work__name {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 700;
+  font-size: 40px;
+  background-color: rgba(0,0,0, 0.6);
+  transition: opacity 0.5s;
+}
+
+.work:hover .work__name{
+  opacity: 1;
 }
