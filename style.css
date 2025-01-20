@@ -230,16 +230,14 @@ a:hover {
   margin-top: 200px;
 }
 
-
-
-.container {
-}
-
-.projects__title {
+.title {
   font-size: 36px;
   text-align: center;
   color: #dedede;
   margin-top: 0;
+}
+
+.projects__title {
   margin-bottom: 65px;
 }
 
@@ -257,6 +255,57 @@ a:hover {
   object-position: center;
 }
 
-.projects--verticals .projects__img{
+.projects--verticals .projects__img {
   height: 560px;
+}
+
+/* Contact */
+
+.contact {
+  margin-top: 200px;
+  margin-bottom: 120px;
+}
+
+.contact .container {
+  max-width: 520px;
+  text-align: center;
+}
+
+.contact__title {
+  margin-bottom: 24px;
+}
+.contact__text {
+  font-size: 26px;
+  margin-bottom: 50px;
+}
+
+/* Footer */
+
+.footer {
+  padding: 40px 0;
+  border-top: 1px solid #696969;
+}
+.footer .container{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.footer__copy {
+  font-size: 16px;
+}
+
+.footer__copy span{
+  color: #ececec;
+}
+
+.socials {
+  display: flex;
+  gap: 40px;
+}
+
+.socials__link {
+  display: flex;
+}
+.socials__img {
 }
