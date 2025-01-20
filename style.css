@@ -181,19 +181,19 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 25px;
+  margin-top: 140px;
 }
 .work {
   height: 888px;
   position: relative;
 }
 
-.work:nth-child(even){
-  position: relative;
-  top: 140px;
+.work:nth-child(odd) {
+  margin-top: -140px;
 }
 
-.work:hover{
-opacity: 1;
+.work:hover {
+  opacity: 1;
 }
 
 .work__img {
@@ -216,10 +216,47 @@ opacity: 1;
 
   font-weight: 700;
   font-size: 40px;
-  background-color: rgba(0,0,0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   transition: opacity 0.5s;
 }
 
-.work:hover .work__name{
+.work:hover .work__name {
   opacity: 1;
+}
+
+/* Projects */
+
+.projects {
+  margin-top: 200px;
+}
+
+
+
+.container {
+}
+
+.projects__title {
+  font-size: 36px;
+  text-align: center;
+  color: #dedede;
+  margin-top: 0;
+  margin-bottom: 65px;
+}
+
+.projects__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.projects__img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.projects--verticals .projects__img{
+  height: 560px;
 }
