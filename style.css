@@ -78,6 +78,12 @@ a:hover {
   background-repeat: no-repeat;
 }
 
+.burger-menu {
+display: none;
+}
+.burger-menu__icon {
+}
+
 /* Header */
 
 .header {
@@ -381,5 +387,97 @@ a:hover {
 }
 
 @media (max-width: 500px) {
+  .header{
+    position: relative;
+  }
+  
 
+  .burger-menu {
+    display: block;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+
+    position: absolute;
+    top: 30px;
+    right: 15px;
+  }
+  .burger-menu__icon {
+    height: 22px;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .header.header--mobile .header__nav{
+    display: flex;
+    align-self: center;
+    flex-wrap: wrap;
+    gap: 20px 30px;
+    justify-content: center;
+  }
+
+  .header.header--mobile .container{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+
+  .header__nav{
+    display: none;
+  }
+
+  .welcome__img{
+    height: 240px;
+    width: 240px;
+  }
+
+  .btn{
+    padding: 16px 20px;
+  }
+
+  .works__btn{
+    margin-bottom: 40px;
+  }
+
+  .work__name{
+    font-size: 28px;
+  }
+
+  .title{
+    font-size: 28px;
+
+  }
+
+  .projects__title{
+    margin-bottom: 35px;
+  }
+
+  .contact__title{
+    margin-bottom: 12px;
+  }
+
+  .contact .container{
+    max-width: 270px;
+  }
+
+  .contact__text{
+    font-size: 18px;
+  }
+
+  .contact{
+    margin-bottom: 100px;
+  }
+
+  .works__wrapper{
+    margin-top: 0;
+  }
+
+
+}
+
+@media (max-width: 420px) {
+  .welcome__title{
+    font-size: 26px;
+  }
 }
