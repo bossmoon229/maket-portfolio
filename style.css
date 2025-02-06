@@ -81,8 +81,6 @@ a:hover {
 .burger-menu {
 display: none;
 }
-.burger-menu__icon {
-}
 
 /* Header */
 
@@ -306,6 +304,25 @@ display: none;
   display: flex;
 }
 
+/* Second page */
+/* 
+.img__container{
+  position: relative;
+} */
+
+main .background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+}
+
+.header.second{
+  /* background: rgba(50, 50, 50, 5%); */
+  backdrop-filter: blur(1px);
+}
+
 @media (max-width: 1100px) {
   .welcome__img {
     margin-right: 0;
@@ -481,3 +498,4 @@ display: none;
     font-size: 26px;
   }
 }
+
